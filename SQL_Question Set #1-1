@@ -1,6 +1,6 @@
 SELECT f.title film_title, c.name category_name, COUNT(r.rental_id) rental_count
-FROM category c
-JOIN film_category fc
+FROM film_category fc
+JOIN category c
 ON c.category_id = fc.category_id
 JOIN film f
 ON f.film_id = fc.film_id
